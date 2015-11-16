@@ -1,3 +1,2 @@
-== README
-
+==TNASTY APP
 This is a test app I am creating in order to learn more about rails, git, and heroku.
