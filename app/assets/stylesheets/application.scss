@@ -23,8 +23,14 @@ body {
   }
 }
 
+.navbar-collapse {
+
+	background: #fff;
+}
+
 .navbar-container {
-  width: 640px;
+  max-width: 642px;
+  width: 100%;
   margin: 0 auto;
 }
 
