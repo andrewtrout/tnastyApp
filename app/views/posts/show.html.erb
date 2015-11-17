@@ -6,7 +6,9 @@
       </div>
     </div>
     <div class="image center-block">
+      <% if @post.image.exists? %>
       <%= image_tag @post.image.url(:medium) %>
+      <% end %>
     </div>
     <p class="caption">
       <%= @post.caption %>
