@@ -1,13 +1,16 @@
 
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 
 body {  
+	background: url('http://www.alanbutler.info/images/gallery/alan-butler-2012-ultimate-pizza-tile-creative-commons-thumb.jpg') repeat;	
+  background-attachment: fixed;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
+
 
 /* ## NAVBAR CUSTOMISATIONS ## */
 
@@ -18,11 +21,20 @@ body {
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #222;
+  border-radius: 0;
+  border: none;
   height: 54px;
   .navbar-nav li a {
     color: #125688;
   }
+}
+
+.navbar-collapse {
+
+	border: none;
+	background: #222;
+
 }
 
 .navbar-container {
@@ -40,6 +52,7 @@ body {
 }
 
 .post {
+	
   background-color: #fff;
   border-color: #edeeee;
   border-style: solid;
