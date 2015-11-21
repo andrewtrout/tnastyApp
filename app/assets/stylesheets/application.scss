@@ -9,6 +9,12 @@ body {
 }
 
 
+textarea {
+	width: 100% !important;
+	height: 60px;
+
+}
+
 
 /* ## NAVBAR CUSTOMISATIONS ## */
 
@@ -52,10 +58,6 @@ body {
 .post {
 	
   background-color: #fff;
-  border-color: #edeeee;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 1px;
   margin-bottom: 60px;
   .post-head {
     flex-direction: row;
@@ -78,8 +80,7 @@ body {
     }
   }
   .image {
-    border-bottom: 1px solid #eeefef;
-    border-top: 1px solid #eeefef;
+  	margin-bottom: 10px;
   }
 }
 
@@ -90,6 +91,8 @@ body {
   .caption {
     margin-bottom: 7px;
   }
+
+
   .user-name {
     font-weight: 500;
     margin-right: 0.3em;
@@ -99,6 +102,12 @@ body {
   .user-name, .caption-content {
     display: inline;
   }
+
+  .user-comment-name {
+
+  	text-align: right;
+  }
+
   #comment {
     margin-top: 7px;
     .user-name {

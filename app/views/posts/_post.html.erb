@@ -20,28 +20,31 @@
       </div>
       <% if post.comments %>
         <% post.comments.each do |comment| %>
-          <div class="comment">
+          <div class="comment row">
+              <div class="user-comment-name col-sm-4">
+                <% if comment.user == current_user %>
+                  <%= link_to post_comment_path(post, comment), method: :delete, data: { confirm: "Are you sure?" } do %>
+                    <span class="glyphicon glyphicon-remove delete-comment"></span>
+                  <% end %>
+                <% end %>
 
-            <% if comment.user == current_user %>
-              <%= link_to post_comment_path(post, comment), method: :delete, data: { confirm: "Are you sure?" } do %>
-                <span class="glyphicon glyphicon-remove delete-comment"></span>
-              <% end %>
+
+                <div class="user-name">
+                  <%= comment.user.user_name %>
+                </div>
+              </div>
+              <div class="col-sm-8">
+            <% if comment.image.exists? %>
+              <div class="image center-block">
+                <%= link_to (image_tag comment.image.url(:medium), class:'img-responsive'), post_path(post) %>
+              </div>
             <% end %>
-
-
-            <div class="user-name">
-              <%= comment.user.user_name %>
-            </div>
-            <div class="image center-block">
-              <% if comment.image.exists? %>
-              <%= link_to (image_tag comment.image.url(:medium), class:'img-responsive'), post_path(post) %>
-              <% end %>
-            </div>
-
-            
-            <div class="comment-content">
+                        <div class="comment-content">
               <%= comment.content %>
             </div>
+          </div>
+            
+
 
            
           </div>
@@ -52,19 +55,19 @@
       <div class="like-button col-sm-1">
         <span class="glyphicon glyphicon-heart-empty"></span>
       </div>
-      <div class="comment-form col-sm-11">
+      <div class="comment-form col-sm-10">
        
             <%= simple_form_for [post, post.comments.new] do |f| %>
-    <div class="form-group">
-      <%= f.input :image %>
-    </div>
-    <div class="form-group text-center">
-      <%= f.input :content, :as => :text %>
-    </div>
-    <div class="form-group text-center">
-      <%= f.button :submit, class: 'btn-success' %>
-    </div>
-  <% end %>
+              <div class="form-group">
+                <%= f.input :image %>
+              </div>
+              <div class="form-group">
+                <%= f.input :content, :as => :text %>
+              </div>
+              <div class="form-group text-center">
+                <%= f.button :submit, class: 'btn-success' %>
+              </div>
+            <% end %>
         
       </div>
     </div>
