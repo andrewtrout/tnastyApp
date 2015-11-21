@@ -4,8 +4,6 @@
 
 
 body {  
-	background: url('http://www.alanbutler.info/images/gallery/alan-butler-2012-ultimate-pizza-tile-creative-commons-thumb.jpg') repeat;	
-  background-attachment: fixed;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -21,7 +19,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #222;
+  background-color: #fff;
   border-radius: 0;
   border: none;
   height: 54px;
@@ -33,7 +31,7 @@ body {
 .navbar-collapse {
 
 	border: none;
-	background: #222;
+	background: #fff;
 
 }
 
