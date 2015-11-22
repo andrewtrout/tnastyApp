@@ -4,6 +4,8 @@
 
 
 body {  
+	background: url('pizza-bg.jpg') repeat;
+	background-attachment: fixed;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -13,6 +15,18 @@ textarea {
 	width: 100% !important;
 	height: 60px;
 	resize: none;
+
+}
+
+.alet {
+
+	border-radius: none !important;
+}
+
+.alert-success {
+    background-color: #00ff99;
+    border: none;
+    color: #00663d;
 
 }
 
@@ -62,7 +76,7 @@ textarea {
 
 .post {
 	
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 60px;
   .post-head {
     flex-direction: row;
