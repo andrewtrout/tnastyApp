@@ -16,7 +16,7 @@
         <div class="user-name">
           <%= post.user.user_name %>
         </div>
-        <%= post.caption %>
+        <%= link_to post.caption, post_path(post) %>
       </div>
       <% if post.comments %>
         <% post.comments.each do |comment| %>
