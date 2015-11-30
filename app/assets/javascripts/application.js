@@ -19,17 +19,10 @@
 
 $(function() {
 
+	$('.add-comment').click(function() {
 
-$('.comment-form').hide();
+		$(this).next('.comment-wrapper').slideToggle('slow');
 
-$('.add-comment').click(function() {
-
-	$(this).parent().find('.comment-form').slideToggle();
-
-
-});
-
-
-
+	});
 
 });

@@ -43,7 +43,6 @@ input {
 .file {
 
   font-size: 12px;
-  overflow: hidden;
 
 }
 
@@ -77,6 +76,12 @@ input {
     border: none;
     color: #ff00ff;
     border-radius: none !important;
+
+}
+
+
+.comment-wrapper {
+display: none;
 
 }
 
@@ -125,7 +130,6 @@ input {
 }
 
 .post {
-	background: image-url('post-bg.gif');
   background-color: #ffffff;
   margin-bottom: 60px;
   .post-head {
@@ -224,7 +228,6 @@ input {
 .form-wrapper {
   width: 60%;
   margin: 20px auto;
-  background: image-url('post-bg.gif');
   background-color: #fff;
   padding: 40px;
   border: 1px solid #eeefef;

@@ -55,21 +55,24 @@
       <div class="like-button col-xs-1">
         <span class="glyphicon glyphicon-heart-empty"></span>
       </div>
-      <div class="add-comment col-xs-11">Add comment...</div>
-      <div class="comment-form col-sm-12">
-       
-            <%= simple_form_for [post, post.comments.new] do |f| %>
-              <div class="form-group">
-                <%= f.input :image %>
-              </div>
-              <div class="form-group">
-                <%= f.input :content, :label => "Add Comment", :as => :text %>
-              </div>
-              <div class="form-group text-center">
-                <%= f.button :submit, class: 'btn-success' %>
-              </div>
-            <% end %>
-        
+      
+        <div class="add-comment col-xs-11">Add comment...</div>
+        <div class="comment-wrapper">
+        <div class="comment-form col-sm-12">
+         
+              <%= simple_form_for [post, post.comments.new] do |f| %>
+                <div class="form-group">
+                  <%= f.input :image %>
+                </div>
+                <div class="form-group">
+                  <%= f.input :content, :label => "Add Comment", :as => :text %>
+                </div>
+                <div class="form-group text-center">
+                  <%= f.button :submit, class: 'btn-success' %>
+                </div>
+              <% end %>
+          
+        </div>
       </div>
     </div>
   </div>
