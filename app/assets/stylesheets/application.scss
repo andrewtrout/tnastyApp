@@ -16,6 +16,8 @@ textarea {
 	height: 60px;
   border: 1px solid #cdcdcd;
 	resize: none;
+      -webkit-appearance:none;  
+    -webkit-border-radius:0px;
 
 }
 
@@ -27,6 +29,8 @@ input {
     margin-bottom: 15px;
     font-size: 25px;
     width: 100%;
+        -webkit-appearance:none;  
+    -webkit-border-radius:0px;
 }
 
 .boolean {
@@ -48,10 +52,14 @@ input {
 
 .button {
   width: auto;
+      -webkit-appearance:none;  
+    -webkit-border-radius:0px;
 }
 
 .btn-success {
   font-size: 15px;
+      -webkit-appearance:none;  
+    -webkit-border-radius:0px;
 }
 
 
@@ -80,10 +88,10 @@ input {
 }
 
 
-.comment-wrapper {
+/* .comment-wrapper {
 display: none;
 
-}
+} */
 
 
 /* ## NAVBAR CUSTOMISATIONS ## */

@@ -18,11 +18,7 @@
 
 
 $(function() {
-
-	$('.add-comment').click(function() {
-
-		$(this).next('.comment-wrapper').slideToggle('slow');
-
-	});
-
+//	$('.add-comment').click(function() {
+//		$(this).next('.comment-wrapper').slideToggle('slow');
+//	});
 });
