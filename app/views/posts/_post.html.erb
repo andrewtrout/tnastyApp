@@ -52,9 +52,10 @@
       <% end %>
     </div>
     <div class="comment-like-form row">
-      <div class="like-button col-sm-1">
+      <div class="like-button col-xs-1">
         <span class="glyphicon glyphicon-heart-empty"></span>
       </div>
+      <div class="add-comment">Add comment...</div>
       <div class="comment-form col-sm-10">
        
             <%= simple_form_for [post, post.comments.new] do |f| %>

@@ -20,7 +20,14 @@
 $(function() {
 
 
+$('.comment-form').hide();
 
+$('.add-comment').click(function() {
+
+	$(this).parent().find('.comment-form').slideToggle();
+
+
+});
 
 
 

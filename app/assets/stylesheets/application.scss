@@ -4,7 +4,7 @@
 
 
 body {  
-	background: url('pizza-bg.jpg') repeat;
+	/*background: url('pizza-bg.jpg') repeat; */
 	background-attachment: fixed;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -14,19 +14,49 @@ body {
 textarea {
 	width: 100% !important;
 	height: 60px;
+  border: 1px solid #cdcdcd;
 	resize: none;
 
 }
 
-.alert {
 
-	border-radius: none !important;
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 15px;
+    font-size: 25px;
+    width: 100%;
 }
+
+.add-comment {
+  cursor: pointer;
+  font-size: 15px;
+  color: #cdcdcd;
+  float: left;
+}
+
+.file {
+
+  font-size: 12px;
+  overflow: hidden;
+
+}
+
+.button {
+  width: auto;
+}
+
+.btn-success {
+  font-size: 15px;
+}
+
 
 .alert-success {
     background-color: #00ff99;
     border: none;
     color: #00663d;
+    border-radius: none !important;
 
 }
 
@@ -34,6 +64,7 @@ textarea {
     background-color: #ff00ff;
     border: none;
     color: #00ff99;
+    border-radius: none !important;
 
 }
 
@@ -41,6 +72,7 @@ textarea {
     background-color: #00ffff;
     border: none;
     color: #ff00ff;
+    border-radius: none !important;
 
 }
 
@@ -198,3 +230,19 @@ textarea {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+
+/* MEDIA QUERIES */
+
+    @media only screen and (max-width : 580px) {
+
+      .form-wrapper {
+        width: 100%;
+      }
+
+    }
+
+    @media only screen and (max-width : 320px) {
+
+    }
+
