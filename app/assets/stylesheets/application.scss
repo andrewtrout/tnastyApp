@@ -29,6 +29,10 @@ input {
     width: 100%;
 }
 
+.boolean {
+  width: auto;
+}
+
 .add-comment {
   cursor: pointer;
   font-size: 15px;
@@ -121,7 +125,7 @@ input {
 }
 
 .post {
-	
+	background: image-url('post-bg.gif');
   background-color: #ffffff;
   margin-bottom: 60px;
   .post-head {
@@ -220,10 +224,10 @@ input {
 .form-wrapper {
   width: 60%;
   margin: 20px auto;
+  background: image-url('post-bg.gif');
   background-color: #fff;
   padding: 40px;
   border: 1px solid #eeefef;
-  border-radius: 3px;
 }
 
 .edit-links {
