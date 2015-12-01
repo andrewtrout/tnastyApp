@@ -1,10 +1,12 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 
 body {  
-	background: image-url('pizza-bg.jpg') repeat; 
+	/*background: image-url('pizza-bg.jpg') repeat;*/ 
+  padding-top: 70px;
 	background-attachment: fixed;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -31,6 +33,12 @@ input {
     width: 100%;
         -webkit-appearance:none;  
     -webkit-border-radius:0px;
+}
+
+
+.button {
+  border: none;
+  background: springgreen;
 }
 
 .boolean {
@@ -97,6 +105,8 @@ display: none;
 /* ## NAVBAR CUSTOMISATIONS ## */
 
 .navbar-brand {
+  padding: 5px 0px;
+  z-index: 666;
   a {
     color: #125688;
   }
@@ -124,7 +134,7 @@ display: none;
 }
 
 .navbar-container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -251,8 +261,18 @@ display: none;
 
     @media only screen and (max-width : 580px) {
 
+      .navbar-brand {
+        padding: 5px 15px;
+
+      }
+
       .form-wrapper {
         width: 100%;
+      }
+
+      .navbar-container {
+        width: 100%; 
+        margin: 0 auto;
       }
 
     }
