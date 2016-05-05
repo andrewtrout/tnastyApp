@@ -1,2 +1,9 @@
 ==TNASTY APP
-This is a test app I am creating in order to learn more about rails.
+
+This is my version of the popular photo sharing app Instagram. 
+
+The main difference is the added functionallity of commenting photos on other users' posts.
+
+A working version of the app can be accessed at the link below.
+
+https://tnasty.herokuapp.com/
