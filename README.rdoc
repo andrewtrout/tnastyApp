@@ -6,4 +6,4 @@ The main difference is the added functionallity of commenting photos on other us
 
 A working version of the app can be accessed at the link below.
 
-https://tnasty.herokuapp.com/
+https://tnasty.herokuapp.com
